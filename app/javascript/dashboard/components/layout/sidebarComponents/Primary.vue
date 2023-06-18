@@ -1,6 +1,10 @@
 <template>
   <div class="primary--sidebar">
-
+    <logo
+      :source="logoSource"
+      :name="installationName"
+      :account-id="accountId"
+    />
     <nav class="menu vertical">
       <primary-nav-item
         v-for="menuItem in menuItems"
